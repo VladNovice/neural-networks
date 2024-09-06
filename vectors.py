@@ -2,23 +2,36 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-a = np.array([1, 1])
-b = np.array([2, 0])
-c = np.array([0, 2])
+vector_a = np.array([1, 1, 32])
+vector_b = np.array([2, 10, 132])
+vector_c = np.array([2, 299, 14])
 
-v = a + b + c
+vector_sum = vector_a + vector_b + vector_c
+
+vector_diff = vector_a - vector_b
+
+vector_product = vector_a * vector_b
+
+vector_division = vector_a / vector_b
+
+
+
+
+
+
+v = vector_a + vector_b + vector_c
 
 plt.grid()
 plt.plot(v[0], v[1], 'o')
 plt.xlim(0,5)
 plt.ylim(0,5)
 
-result = np.dot(a,b)
+result = np.dot(vector_a,vector_b)
 
-len_a = math.sqrt(a[0]**2 + a[1]**2)
+lenvector_a = math.sqrt(vector_a[0]**2 + vector_a[1]**2)
 
-len_b = math.sqrt(a[0]**2 + b[1]**2)
+lenvector_b = math.sqrt(vector_a[0]**2 + vector_b[1]**2)
 
-cos = result / (len_a * len_b)
+cos = result / (lenvector_a * lenvector_b)
 
 print(cos)
