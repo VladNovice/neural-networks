@@ -15,10 +15,6 @@ vector_product = vector_a * vector_b
 vector_division = vector_a / vector_b
 
 
-
-
-
-
 v = vector_a + vector_b + vector_c
 
 plt.grid()
